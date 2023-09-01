@@ -15,7 +15,9 @@ https://github.com/adhityabagasmiwa/Movie-Parkee/assets/33971466/c4bfd2d5-44f4-4
 - FittedSheets
 
 
-
-
+## Note
+Inside the Constants file please change the following: 
+- Change apiKey for your own apiKey
+- Change authToken for your own authToken
 
 
