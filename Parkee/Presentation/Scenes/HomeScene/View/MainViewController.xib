@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Parkee" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBarMain" destination="vfa-U5-bbK" id="CeK-dT-HPE"/>
+                <outlet property="tableView" destination="Bok-Vr-RHk" id="Fxv-PZ-Y6l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pj-EH-kIG" userLabel="Main View">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Cari movie" translatesAutoresizingMaskIntoConstraints="NO" id="vfa-U5-bbK">
+                            <rect key="frame" x="8" y="0.0" width="338" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbl-o0-dtz" userLabel="Favorite Button">
+                            <rect key="frame" x="346" y="0.0" width="47" height="56"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="bookmark.fill" catalog="system" title=" ">
+                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14"/>
+                                <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="onPressFavoriteButton:" destination="-1" eventType="touchUpInside" id="tq8-p9-iFZ"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bok-Vr-RHk">
+                            <rect key="frame" x="0.0" y="72" width="393" height="687"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Bok-Vr-RHk" firstAttribute="top" secondItem="vfa-U5-bbK" secondAttribute="bottom" constant="16" id="5H0-RB-50q"/>
+                        <constraint firstAttribute="trailing" secondItem="Bok-Vr-RHk" secondAttribute="trailing" id="EgZ-x9-NkC"/>
+                        <constraint firstAttribute="trailing" secondItem="Jbl-o0-dtz" secondAttribute="trailing" id="IjW-he-qEL"/>
+                        <constraint firstItem="Jbl-o0-dtz" firstAttribute="centerY" secondItem="vfa-U5-bbK" secondAttribute="centerY" id="aE2-HM-Bb0"/>
+                        <constraint firstItem="Bok-Vr-RHk" firstAttribute="leading" secondItem="4Pj-EH-kIG" secondAttribute="leading" id="dzf-lQ-bCN"/>
+                        <constraint firstItem="vfa-U5-bbK" firstAttribute="leading" secondItem="4Pj-EH-kIG" secondAttribute="leading" constant="8" id="kAW-cS-pmh"/>
+                        <constraint firstItem="Jbl-o0-dtz" firstAttribute="leading" secondItem="vfa-U5-bbK" secondAttribute="trailing" id="mXc-vt-LDE"/>
+                        <constraint firstItem="vfa-U5-bbK" firstAttribute="top" secondItem="4Pj-EH-kIG" secondAttribute="top" id="pLF-Tt-oAk"/>
+                        <constraint firstAttribute="bottom" secondItem="Bok-Vr-RHk" secondAttribute="bottom" id="v8b-cW-e9U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4Pj-EH-kIG" secondAttribute="bottom" id="5iE-nR-gTy"/>
+                <constraint firstItem="4Pj-EH-kIG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9sc-eG-GnB"/>
+                <constraint firstItem="4Pj-EH-kIG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mgd-P8-cN2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Pj-EH-kIG" secondAttribute="trailing" id="npn-Of-p5H"/>
+                <constraint firstItem="Jbl-o0-dtz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="w4M-Vx-tdK"/>
+            </constraints>
+            <point key="canvasLocation" x="5" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bookmark.fill" catalog="system" width="110" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

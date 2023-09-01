@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteViewController" customModule="Parkee" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyView" destination="PGK-jN-oQh" id="pV5-Gh-w6F"/>
+                <outlet property="mainView" destination="9wK-PQ-P0I" id="qvd-R7-oJl"/>
+                <outlet property="tableView" destination="Man-ap-FUr" id="ZtO-dJ-Vgp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wK-PQ-P0I" userLabel="Main View">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Man-ap-FUr">
+                            <rect key="frame" x="0.0" y="16" width="393" height="743"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-jN-oQh" userLabel="Empty View">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplayvideo.badge.exclamationmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZlX-1e-jgX" userLabel="Image View">
+                                    <rect key="frame" x="75.333333333333329" y="240" width="241.33333333333331" height="127"/>
+                                    <color key="tintColor" systemColor="systemPinkColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="128" id="G71-B8-6bq"/>
+                                        <constraint firstAttribute="width" constant="240" id="wey-uE-qUd"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upss, data tidak ditemukan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJL-uV-cei">
+                                    <rect key="frame" x="24" y="392" width="345" height="20.333333333333314"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="YJL-uV-cei" firstAttribute="top" secondItem="ZlX-1e-jgX" secondAttribute="bottom" constant="24" id="11u-AU-bEz"/>
+                                <constraint firstItem="ZlX-1e-jgX" firstAttribute="top" secondItem="PGK-jN-oQh" secondAttribute="top" constant="240" id="Am5-K1-zTG"/>
+                                <constraint firstItem="ZlX-1e-jgX" firstAttribute="centerX" secondItem="PGK-jN-oQh" secondAttribute="centerX" id="VTo-uu-TFn"/>
+                                <constraint firstItem="YJL-uV-cei" firstAttribute="leading" secondItem="PGK-jN-oQh" secondAttribute="leading" constant="24" id="jf1-NA-UQi"/>
+                                <constraint firstAttribute="trailing" secondItem="YJL-uV-cei" secondAttribute="trailing" constant="24" id="kCJ-iz-Kb8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="PGK-jN-oQh" firstAttribute="top" secondItem="9wK-PQ-P0I" secondAttribute="top" id="5Sp-Hi-OTl"/>
+                        <constraint firstItem="Man-ap-FUr" firstAttribute="top" secondItem="9wK-PQ-P0I" secondAttribute="top" constant="16" id="Ib9-Bi-ptJ"/>
+                        <constraint firstItem="PGK-jN-oQh" firstAttribute="leading" secondItem="9wK-PQ-P0I" secondAttribute="leading" id="X6s-bx-fIn"/>
+                        <constraint firstAttribute="bottom" secondItem="PGK-jN-oQh" secondAttribute="bottom" id="YHI-lv-xJw"/>
+                        <constraint firstItem="Man-ap-FUr" firstAttribute="leading" secondItem="9wK-PQ-P0I" secondAttribute="leading" id="eEn-Q6-x6F"/>
+                        <constraint firstAttribute="trailing" secondItem="PGK-jN-oQh" secondAttribute="trailing" id="gOR-G7-niC"/>
+                        <constraint firstAttribute="bottom" secondItem="Man-ap-FUr" secondAttribute="bottom" id="h2n-w6-jbd"/>
+                        <constraint firstAttribute="trailing" secondItem="Man-ap-FUr" secondAttribute="trailing" id="lhc-nz-Jib"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9wK-PQ-P0I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cxe-xn-ta9"/>
+                <constraint firstItem="9wK-PQ-P0I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="efX-P3-k0k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9wK-PQ-P0I" secondAttribute="bottom" id="kob-9j-1FN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9wK-PQ-P0I" secondAttribute="trailing" id="obB-Gd-dLU"/>
+            </constraints>
+            <point key="canvasLocation" x="92" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="airplayvideo.badge.exclamationmark" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
