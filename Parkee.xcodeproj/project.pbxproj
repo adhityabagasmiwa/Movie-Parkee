@@ -10,7 +10,6 @@
 		52056F4E72D4E70650CBFCBD /* Pods_Parkee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7167AE041D34892148C8DEB3 /* Pods_Parkee.framework */; };
 		B83A281C2AA04C74002BB445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A281B2AA04C74002BB445 /* AppDelegate.swift */; };
 		B83A281E2AA04C74002BB445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A281D2AA04C74002BB445 /* SceneDelegate.swift */; };
-		B83A28262AA04C74002BB445 /* Parkee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B83A28242AA04C74002BB445 /* Parkee.xcdatamodeld */; };
 		B83A28282AA04C76002BB445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83A28272AA04C76002BB445 /* Assets.xcassets */; };
 		B83A282B2AA04C76002BB445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83A28292AA04C76002BB445 /* LaunchScreen.storyboard */; };
 		B85FB6842AA19D4900268AE4 /* MovieLocalDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B85FB6822AA19D4900268AE4 /* MovieLocalDB.xcdatamodeld */; };
@@ -21,6 +20,11 @@
 		B85FB6962AA1B28300268AE4 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FB6952AA1B28300268AE4 /* FavoriteViewModel.swift */; };
 		B85FB6A02AA1C53A00268AE4 /* ConfirmationSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FB69E2AA1C53A00268AE4 /* ConfirmationSheetViewController.swift */; };
 		B85FB6A12AA1C53A00268AE4 /* ConfirmationSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85FB69F2AA1C53A00268AE4 /* ConfirmationSheetViewController.xib */; };
+		B85FB6A32AA1DF2800268AE4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FB6A22AA1DF2800268AE4 /* Utils.swift */; };
+		B85FB6A72AA1DFE800268AE4 /* MovieListJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = B85FB6A62AA1DFE800268AE4 /* MovieListJSON.json */; };
+		B85FB6A92AA1E01900268AE4 /* MovieDetailJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = B85FB6A82AA1E01900268AE4 /* MovieDetailJSON.json */; };
+		B85FB6B92AA1E1E500268AE4 /* MockAPIServiceMovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FB6B82AA1E1E500268AE4 /* MockAPIServiceMovieList.swift */; };
+		B85FB6BD2AA1E4C600268AE4 /* MovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FB6BC2AA1E4C600268AE4 /* MovieListTests.swift */; };
 		B882DF132AA06313001A9075 /* MovieInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B882DF122AA06313001A9075 /* MovieInteractorContract.swift */; };
 		B882DF152AA06369001A9075 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B882DF142AA06369001A9075 /* MovieInteractor.swift */; };
 		B882DF192AA063D2001A9075 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B882DF182AA063D2001A9075 /* Movie.swift */; };
@@ -44,15 +48,28 @@
 		B8E1D71D2AA0572B00CAF8B3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1D71C2AA0572B00CAF8B3 /* APIService.swift */; };
 		B8E1D71F2AA0586300CAF8B3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1D71E2AA0586300CAF8B3 /* NetworkManager.swift */; };
 		B8E1D7232AA0590100CAF8B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1D7222AA0590100CAF8B3 /* Constants.swift */; };
+		DA025826BA83C4BF28D8C528 /* libPods-ParkeeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41113A826FCEF0F894FCBF7F /* libPods-ParkeeTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B85FB6B32AA1E16E00268AE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B83A28102AA04C74002BB445 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B83A28172AA04C74002BB445;
+			remoteInfo = Parkee;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		41113A826FCEF0F894FCBF7F /* libPods-ParkeeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParkeeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5181DF3F59EAECF10EAA3D4D /* Pods-Parkee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkee.debug.xcconfig"; path = "Target Support Files/Pods-Parkee/Pods-Parkee.debug.xcconfig"; sourceTree = "<group>"; };
+		51EFB00BC539983058B224B2 /* Pods-ParkeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkeeTests.release.xcconfig"; path = "Target Support Files/Pods-ParkeeTests/Pods-ParkeeTests.release.xcconfig"; sourceTree = "<group>"; };
 		7167AE041D34892148C8DEB3 /* Pods_Parkee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parkee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25DFD171AB549502EC206E7 /* Pods-ParkeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkeeTests.debug.xcconfig"; path = "Target Support Files/Pods-ParkeeTests/Pods-ParkeeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B83A28182AA04C74002BB445 /* Parkee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parkee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83A281B2AA04C74002BB445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83A281D2AA04C74002BB445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B83A28252AA04C74002BB445 /* Parkee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parkee.xcdatamodel; sourceTree = "<group>"; };
 		B83A28272AA04C76002BB445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83A282A2AA04C76002BB445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83A282C2AA04C76002BB445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +81,12 @@
 		B85FB6952AA1B28300268AE4 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		B85FB69E2AA1C53A00268AE4 /* ConfirmationSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationSheetViewController.swift; sourceTree = "<group>"; };
 		B85FB69F2AA1C53A00268AE4 /* ConfirmationSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationSheetViewController.xib; sourceTree = "<group>"; };
+		B85FB6A22AA1DF2800268AE4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B85FB6A62AA1DFE800268AE4 /* MovieListJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieListJSON.json; sourceTree = "<group>"; };
+		B85FB6A82AA1E01900268AE4 /* MovieDetailJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieDetailJSON.json; sourceTree = "<group>"; };
+		B85FB6AF2AA1E16E00268AE4 /* ParkeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85FB6B82AA1E1E500268AE4 /* MockAPIServiceMovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIServiceMovieList.swift; sourceTree = "<group>"; };
+		B85FB6BC2AA1E4C600268AE4 /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
 		B882DF122AA06313001A9075 /* MovieInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractorContract.swift; sourceTree = "<group>"; };
 		B882DF142AA06369001A9075 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
 		B882DF182AA063D2001A9075 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -99,6 +122,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B85FB6AC2AA1E16E00268AE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA025826BA83C4BF28D8C528 /* libPods-ParkeeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				7167AE041D34892148C8DEB3 /* Pods_Parkee.framework */,
+				41113A826FCEF0F894FCBF7F /* libPods-ParkeeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B83A281A2AA04C74002BB445 /* Parkee */,
+				B85FB6B02AA1E16E00268AE4 /* ParkeeTests */,
 				B83A28192AA04C74002BB445 /* Products */,
 				E7F9D84FBFE2035FE2CEF2B9 /* Pods */,
 				37C8002BD2142A046CED81AC /* Frameworks */,
@@ -124,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				B83A28182AA04C74002BB445 /* Parkee.app */,
+				B85FB6AF2AA1E16E00268AE4 /* ParkeeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,10 +170,8 @@
 				B8E1D7142AA0527800CAF8B3 /* Presentation */,
 				B83A281B2AA04C74002BB445 /* AppDelegate.swift */,
 				B83A281D2AA04C74002BB445 /* SceneDelegate.swift */,
-				B83A28272AA04C76002BB445 /* Assets.xcassets */,
 				B83A28292AA04C76002BB445 /* LaunchScreen.storyboard */,
 				B83A282C2AA04C76002BB445 /* Info.plist */,
-				B83A28242AA04C74002BB445 /* Parkee.xcdatamodeld */,
 			);
 			path = Parkee;
 			sourceTree = "<group>";
@@ -177,6 +209,32 @@
 				B85FB69F2AA1C53A00268AE4 /* ConfirmationSheetViewController.xib */,
 			);
 			path = Sheets;
+			sourceTree = "<group>";
+		};
+		B85FB6A42AA1DF6A00268AE4 /* MockJSON */ = {
+			isa = PBXGroup;
+			children = (
+				B85FB6A62AA1DFE800268AE4 /* MovieListJSON.json */,
+				B85FB6A82AA1E01900268AE4 /* MovieDetailJSON.json */,
+			);
+			path = MockJSON;
+			sourceTree = "<group>";
+		};
+		B85FB6AA2AA1E10A00268AE4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B83A28272AA04C76002BB445 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B85FB6B02AA1E16E00268AE4 /* ParkeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B85FB6B82AA1E1E500268AE4 /* MockAPIServiceMovieList.swift */,
+				B85FB6BC2AA1E4C600268AE4 /* MovieListTests.swift */,
+			);
+			path = ParkeeTests;
 			sourceTree = "<group>";
 		};
 		B882DF0F2AA062C7001A9075 /* Interactor */ = {
@@ -327,8 +385,11 @@
 		B8E1D7202AA058DE00CAF8B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B85FB6AA2AA1E10A00268AE4 /* Assets */,
+				B85FB6A42AA1DF6A00268AE4 /* MockJSON */,
 				B8E1D7212AA058E800CAF8B3 /* Extensions */,
 				B8E1D7222AA0590100CAF8B3 /* Constants.swift */,
+				B85FB6A22AA1DF2800268AE4 /* Utils.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -377,6 +438,8 @@
 			children = (
 				5181DF3F59EAECF10EAA3D4D /* Pods-Parkee.debug.xcconfig */,
 				C94912ED9389DC8489A5CFD0 /* Pods-Parkee.release.xcconfig */,
+				B25DFD171AB549502EC206E7 /* Pods-ParkeeTests.debug.xcconfig */,
+				51EFB00BC539983058B224B2 /* Pods-ParkeeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -403,6 +466,25 @@
 			productReference = B83A28182AA04C74002BB445 /* Parkee.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B85FB6AE2AA1E16E00268AE4 /* ParkeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85FB6B52AA1E16E00268AE4 /* Build configuration list for PBXNativeTarget "ParkeeTests" */;
+			buildPhases = (
+				8904EB778826B87716683136 /* [CP] Check Pods Manifest.lock */,
+				B85FB6AB2AA1E16E00268AE4 /* Sources */,
+				B85FB6AC2AA1E16E00268AE4 /* Frameworks */,
+				B85FB6AD2AA1E16E00268AE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B85FB6B42AA1E16E00268AE4 /* PBXTargetDependency */,
+			);
+			name = ParkeeTests;
+			productName = ParkeeTests;
+			productReference = B85FB6AF2AA1E16E00268AE4 /* ParkeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -415,6 +497,10 @@
 				TargetAttributes = {
 					B83A28172AA04C74002BB445 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					B85FB6AE2AA1E16E00268AE4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B83A28172AA04C74002BB445;
 					};
 				};
 			};
@@ -432,6 +518,7 @@
 			projectRoot = "";
 			targets = (
 				B83A28172AA04C74002BB445 /* Parkee */,
+				B85FB6AE2AA1E16E00268AE4 /* ParkeeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,7 +535,16 @@
 				B83A282B2AA04C76002BB445 /* LaunchScreen.storyboard in Resources */,
 				B85FB6A12AA1C53A00268AE4 /* ConfirmationSheetViewController.xib in Resources */,
 				B83A28282AA04C76002BB445 /* Assets.xcassets in Resources */,
+				B85FB6A92AA1E01900268AE4 /* MovieDetailJSON.json in Resources */,
+				B85FB6A72AA1DFE800268AE4 /* MovieListJSON.json in Resources */,
 				B882DF252AA08601001A9075 /* CardListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85FB6AD2AA1E16E00268AE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +566,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parkee/Pods-Parkee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8904EB778826B87716683136 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkeeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C9426627131238D966FE9DAC /* [CP] Check Pods Manifest.lock */ = {
@@ -509,6 +627,7 @@
 				B882DF1F2AA0689B001A9075 /* MovieListViewModel.swift in Sources */,
 				B8E1D71D2AA0572B00CAF8B3 /* APIService.swift in Sources */,
 				B886A5582AA19786003D3B40 /* DatabaseManager.swift in Sources */,
+				B85FB6A32AA1DF2800268AE4 /* Utils.swift in Sources */,
 				B83A281C2AA04C74002BB445 /* AppDelegate.swift in Sources */,
 				B85FB6A02AA1C53A00268AE4 /* ConfirmationSheetViewController.swift in Sources */,
 				B85FB68C2AA19F9300268AE4 /* MovieDB+CoreDataClass.swift in Sources */,
@@ -523,7 +642,6 @@
 				B882DF1B2AA064DA001A9075 /* MovieDetail.swift in Sources */,
 				B882DF322AA0C054001A9075 /* MovieDetailViewController.swift in Sources */,
 				B8E1D7192AA0552300CAF8B3 /* NetworkManagerContract.swift in Sources */,
-				B83A28262AA04C74002BB445 /* Parkee.xcdatamodeld in Sources */,
 				B8E1D71B2AA056D300CAF8B3 /* APIError.swift in Sources */,
 				B85FB6932AA1AE9200268AE4 /* FavoriteViewController.swift in Sources */,
 				B8E1D7232AA0590100CAF8B3 /* Constants.swift in Sources */,
@@ -532,7 +650,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B85FB6AB2AA1E16E00268AE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85FB6BD2AA1E4C600268AE4 /* MovieListTests.swift in Sources */,
+				B85FB6B92AA1E1E500268AE4 /* MockAPIServiceMovieList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B85FB6B42AA1E16E00268AE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B83A28172AA04C74002BB445 /* Parkee */;
+			targetProxy = B85FB6B32AA1E16E00268AE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B83A28292AA04C76002BB445 /* LaunchScreen.storyboard */ = {
@@ -724,6 +859,44 @@
 			};
 			name = Release;
 		};
+		B85FB6B62AA1E16E00268AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25DFD171AB549502EC206E7 /* Pods-ParkeeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FJ9XT6RUL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miwa.app.ParkeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parkee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Parkee";
+			};
+			name = Debug;
+		};
+		B85FB6B72AA1E16E00268AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EFB00BC539983058B224B2 /* Pods-ParkeeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FJ9XT6RUL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miwa.app.ParkeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parkee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Parkee";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -745,19 +918,18 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B85FB6B52AA1E16E00268AE4 /* Build configuration list for PBXNativeTarget "ParkeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85FB6B62AA1E16E00268AE4 /* Debug */,
+				B85FB6B72AA1E16E00268AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B83A28242AA04C74002BB445 /* Parkee.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B83A28252AA04C74002BB445 /* Parkee.xcdatamodel */,
-			);
-			currentVersion = B83A28252AA04C74002BB445 /* Parkee.xcdatamodel */;
-			path = Parkee.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		B85FB6822AA19D4900268AE4 /* MovieLocalDB.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

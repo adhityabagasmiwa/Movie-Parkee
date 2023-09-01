@@ -11,3 +11,9 @@ target 'Parkee' do
   pod 'FittedSheets', '2.5.3'
 
 end
+
+target 'ParkeeTests' do
+  inherit! :search_paths
+  
+  pod 'Alamofire', '5.7.1'
+end

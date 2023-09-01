@@ -1,0 +1,6 @@
+module Pods_ParkeeTests {
+  umbrella header "Pods-ParkeeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
